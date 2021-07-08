@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> WincAcademy contactgegevens </title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="black-border">Opdracht: Maak je contact formulier!</h1>
+  </header>
+
+  <main class="black-border">
+    <p>
+      Uw gegevens kunnen hieronder worden geplaatst.
+    </p>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label> Uw Naam: <input type="text" name="naam" /></label>
+      </p>
+      <p>
+        <label> Email Adres: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label> Telefoonnummer: <input type="tel" name="telefoonnummer" /></label>
+      </p>
+      <p>
+        <label> Leeftijd: <input type="number" name="leeftijd" /></label>
+      </p>
+      <p>
+        <label> Geboortedatum: <input type="date" name="geboortedatum" /></label>
+      </p>
+
+      <p> Geslacht:</p>
+      <p>
+        <label for="man"> Man <input type="radio" class="geslacht" name="geslacht" value="man" /></label>
+        <label for="vrouw"> Vrouw <input type="radio" class="geslacht" name="geslacht" value="vrouw" /></label>
+        <label for="anders"> Anders <input type="radio" class="geslacht" name="geslacht" value="anders" /></label>
+      </p>
+
+      <p> Favoriete Cuisine:</p>
+      <p>
+        <label for="frans"> Frans<input type="checkbox" class="favoriete_cuisine" name="favoriete_cuisine"
+            value="frans" /></label>
+        <label for="frans"> Italiaans<input type="checkbox" class="favoriete_cuisine" name="favoriete_cuisine"
+            value="italiaans" /></label>
+        <label for="spaans"> Spaans<input type="checkbox" class="favoriete_cuisine" name="favoriete_cuisine"
+            value="spaans" /></label>
+        <label for="arabisch"> Arabisch<input type="checkbox" class="favoriete_cuisine" name="favoriete_cuisine"
+            value="arabisch" /></label>
+      </p>
+
+      <p>
+        <label> Favoriete kleur: <input type="color" id="favoriete_kleur" name="favoriete_kleur" /></label>
+      </p>
+
+      <p>
+        <label> Biografie: <textarea name="message">Type hier uw biografie.</textarea></label>
+      </p>
+
+      <p> Upload je laatste recept:
+        <label id="recept"> Klik hier.<input type="file" name="recept" /></label>
+      </p>
+
+      <p> Een link naar jou website:
+        <label id="recept-url"> <input type="url" name="recept-url" /></label>
+      </p>
+
+      <p>
+        <button type="reset"> Reset </button>
+        <button type="submit"> Verstuur </button>
+      </p>
+    </form>
+  </main>
+
+
+  <nav class="black-border">
+    <aside>
+      <ul>
+        <li>
+          <a href="index.html">
+            Main pagina
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.nl/" target="_blank">
+            Google.
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </nav>
+
+</body>
+
+</html>
